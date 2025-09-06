@@ -26,65 +26,76 @@
 <body>
     <div class="skip-link"><a class="skip" href="#main">Skip</a></div>
 
-    <header>
-        <h1>My Blog</h1>
-        <nav aria-label="Main Navigation">
-            <a href="#">Home</a>
-            <a href="#">Articles</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+    <header class="header">
+        <div class="logo">My Blog</div>
+        <nav class="menu" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <article>
-            <h2>The Joy of Semantics</h2>
-            <div class="meta">By Jane Doe • Posted 2 Sept 2025</div>
-            <figure>
-                <img src="hero.jpg">
-                <figcaption> Image of a hero </figcaption>
-            </figure>
-            <p>HTML provides elements that convey meaning…</p>
-            <p>Using the right tags improves accessibility and SEO…</p>
-            <blockquote>
-                <p>“Good markup is invisible, but invaluable.”</p>
-            </blockquote>
-        </article>
+    <div class="container">
+        <main class="content" id="main">
+            <article>
+                <h1>The Joy of Semantics</h1>
+                <p class="meta">By Jane Doe • Posted 2 Sept 2025</p>
+                <figure>
+                    <img src="hero.jpg">
+                    <figcaption> Image of a hero </figcaption>
+                </figure>
+                <section>
+                    <p>HTML provides elements that convey meaning…</p>
+                    <p>Using the right tags improves accessibility and SEO…</p>
+                </section>
+                <blockquote>
+                    <p>“Good markup is invisible, but invaluable.”</p>
+                </blockquote>
+            </article>
 
-        <section>
-            <h3>Related</h3>
-            <ul>
-                <article>
-                    <a href="#">Why headings matter</a>
-                    <p>A quick primer on h1–h6</p>
-                </article>
-                <article>
-                    <a href="#">Landmarks 101</a>
-                    <p>header, nav, main…</p>
-                </article>
-            </ul>
-        </section>
-    </main>
+            <section class="related" aria-labelledby="related-title">
+                <h2 id="related-title">Related</h2>
+                <ul class="cards">
+                    <li>
+                        <article class="card">
+                            <h3 class="card-title"><a href="#">Why headings matter</a></h3>
+                            <p class="card-desc">A quick primer on h1–h6</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="card">
+                            <h3 class="card-title"><a href="#">Landmarks 101</a></h3>
+                            <p class="card-desc">header, nav, main…</p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
 
-    <aside>
-        <div class="search">
-            <h4>Search</h4>
-            <div>
-                <input type="text" placeholder="Find…">
-                <button>Go</button>
-            </div>
-        </div>
-        <section aria-label="About Section">
-            <h5>About this site</h5>
-            <p>We publish web standards tips weekly.</p>
-        </section>
-    </aside>
+        <aside class="sidebar">
+            <section class="search">
+                <h2>Search</h2>
+                <form>
+                    <label for="search-input">Find more  here:</label>
+                    <input id="search-input" type="text" placeholder="Find…">
+                    <button>Go</button>
+                </form>
+            </section>
+            <section class="about-widget" aria-label="About Section">
+                <h2>About this site</h2>
+                <p>We publish web standards tips weekly.</p>
+            </section>
+        </aside>
+    </div>
 
-    <footer>
-        <nav aria-label="Footer Navigation">
+    <footer class="footer">
+        <nav class="links" aria-label="Footer Navigation">
             <a href="#">Privacy</a> | <a href="#">Terms</a>
         </nav>
-        <p>Contact: info@example.com</p>
+        <p class="contact">Contact: info@example.com</p>
     </footer>
 </body>
 
