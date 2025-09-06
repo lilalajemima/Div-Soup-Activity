@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Only for a visible skip link in your refactor */
+        .skip {
+            position: absolute;
+            left: -9999px;
+            top: auto;
+        }
+
+        .skip:focus {
+            left: 1rem;
+            top: 1rem;
+            background: #000;
+            color: #fff;
+            padding: .5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="skip-link"><a class="skip" href="#main">Skip</a></div>
+
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Articles</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>The Joy of Semantics</h2>
+            <div class="meta">By Jane Doe • Posted 2 Sept 2025</div>
+            <img src="hero.jpg">
+            <p>HTML provides elements that convey meaning…</p>
+            <p>Using the right tags improves accessibility and SEO…</p>
+
+            <div class="quote">“Good markup is invisible, but invaluable.”</div>
+        </article>
+        <section>
+            <div class="related-title">Related</div>
+            <div class="cards">
+                <article>
+                    <div class="card-title"><a href="#">Why headings matter</a></div>
+                    <div class="card-desc">A quick primer on h1–h6</div>
+                </div>
+                <article>
+                    <div class="card-title"><a href="#">Landmarks 101</a></div>
+                    <div class="card-desc">header, nav, main…</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <div class="search">
+            <div>Search</div>
+            <div>
+                <input type="text" placeholder="Find…">
+                <button>Go</button>
+            </div>
+        </div>
+        <div class="about-widget">
+            <div>About this site</div>
+            <div>We publish web standards tips weekly.</div>
+        </div>
+    </aside>
+    </div>
+
+    <footer>
+        <div class="links">
+            <a href="#">Privacy</a> | <a href="#">Terms</a>
+        </div>
+        <div class="contact">Contact: info@example.com</div>
+    </footer>
+</body>
+
+</html>
