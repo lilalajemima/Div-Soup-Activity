@@ -28,7 +28,7 @@
 
     <header>
         <h1>My Blog</h1>
-        <nav>
+        <nav aria-label="Main Navigation">
             <a href="#">Home</a>
             <a href="#">Articles</a>
             <a href="#">About</a>
@@ -40,47 +40,51 @@
         <article>
             <h2>The Joy of Semantics</h2>
             <div class="meta">By Jane Doe • Posted 2 Sept 2025</div>
-            <img src="hero.jpg">
+            <figure>
+                <img src="hero.jpg">
+                <figcaption> Image of a hero </figcaption>
+            </figure>
             <p>HTML provides elements that convey meaning…</p>
             <p>Using the right tags improves accessibility and SEO…</p>
-
-            <div class="quote">“Good markup is invisible, but invaluable.”</div>
+            <blockquote>
+                <p>“Good markup is invisible, but invaluable.”</p>
+            </blockquote>
         </article>
+
         <section>
-            <div class="related-title">Related</div>
-            <div class="cards">
+            <h3>Related</h3>
+            <ul>
                 <article>
-                    <div class="card-title"><a href="#">Why headings matter</a></div>
-                    <div class="card-desc">A quick primer on h1–h6</div>
-                </div>
+                    <a href="#">Why headings matter</a>
+                    <p>A quick primer on h1–h6</p>
+                </article>
                 <article>
-                    <div class="card-title"><a href="#">Landmarks 101</a></div>
-                    <div class="card-desc">header, nav, main…</div>
-                </div>
-            </div>
+                    <a href="#">Landmarks 101</a>
+                    <p>header, nav, main…</p>
+                </article>
+            </ul>
         </section>
     </main>
 
     <aside>
         <div class="search">
-            <div>Search</div>
+            <h4>Search</h4>
             <div>
                 <input type="text" placeholder="Find…">
                 <button>Go</button>
             </div>
         </div>
-        <div class="about-widget">
-            <div>About this site</div>
-            <div>We publish web standards tips weekly.</div>
-        </div>
+        <section aria-label="About Section">
+            <h5>About this site</h5>
+            <p>We publish web standards tips weekly.</p>
+        </section>
     </aside>
-    </div>
 
     <footer>
-        <div class="links">
+        <nav aria-label="Footer Navigation">
             <a href="#">Privacy</a> | <a href="#">Terms</a>
-        </div>
-        <div class="contact">Contact: info@example.com</div>
+        </nav>
+        <p>Contact: info@example.com</p>
     </footer>
 </body>
 
